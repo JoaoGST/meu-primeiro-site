@@ -5,17 +5,6 @@ Este projeto é uma página web simples feita com **HTML e CSS**, incluindo íco
 
 ---
 
-## 🗂 Estrutura do Projeto
-
-meu-primeiro-site/
-│
-├── index.html # Página principal 🏠
-├── styles.css # Arquivo de estilos 🎨
-├── favicons/ # Ícones do site 🖼️
-└── README.md # Este arquivo 📄
-
----
-
 ## 🚀 Como Visualizar
 
 1. Clone ou baixe o repositório:
