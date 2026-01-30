@@ -1,0 +1,248 @@
+/* RESET E CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: rgba(20, 0, 0, 0.9);
+    font-family: 'Cabin', Arial, Helvetica, sans-serif;
+}
+
+/* TEXTOS */
+p {
+    color: white;
+    font-size: 17px;
+    letter-spacing: 1px;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    text-align: justify;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 90px;
+    flex-wrap: wrap;
+}
+
+/* LOGO */
+#logo img {
+    width: 88px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+#logo img:hover {
+    transform: scale(1.15);
+}
+
+/* MENU */
+#menu {
+    display: flex;
+    gap: 10px;
+}
+
+#menu a {
+    padding: 12px 18px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+#menu a:hover {
+    background-color: #2EBCBC;
+    color: white;
+}
+
+/* SEÇÃO PRINCIPAL */
+.principal {
+    padding-top: 90px;
+    min-height: 100vh;
+    background-image: url(https://a-static.besthdwallpaper.com/city-night-wallpaper-3840x2400-103285_9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* EFEITO ESCURO */
+.efeito {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* SETA */
+.arrow {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow span {
+    width: 10px;
+    height: 65px;
+    background: white;
+    border-radius: 5px;
+    margin: 15px;
+    animation: move 1.1s infinite ease-in-out;
+}
+
+.arrow span:nth-last-of-type(1) {
+    transform: rotate(45deg);
+}
+
+.arrow span:nth-last-of-type(2) {
+    transform: rotate(-45deg);
+}
+
+/* CONTEÚDO */
+.container2 {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.container2 h1 {
+    color: #2EBCBC;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0.5px 0.5px 0.5px #111;
+}
+
+.container2 p {
+    color: black;
+    font-size: 17px;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* CONTATO */
+.container3 {
+    background-color: rgb(221, 221, 221);
+    padding: 40px 20px;
+}
+
+.container3 h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: black;
+}
+
+.whats,
+.email {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    /* alinhamento à esquerda com recuo */
+    max-width: 900px;
+    margin: 0 auto 15px auto;
+    padding-left: 108px;
+}
+
+.whats span,
+.email span {
+    font-size: 28px;
+}
+
+.container3 p {
+    margin: 0;
+    color: black;
+    width: auto;
+}
+
+/* FOOTER */
+footer {
+    background-color: white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: groove;
+}
+
+footer h5 {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+/* ANIMAÇÃO */
+@keyframes move {
+    0% { margin-top: 0; }
+    50% { margin-top: 100px; }
+    100% { margin-top: 0; }
+}
+
+/* RESPONSIVO - MOBILE */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    #menu {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #menu a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container2 h1 {
+        font-size: 28px;
+        padding: 0 10px;
+    }
+
+    .container2 p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .arrow {
+        min-height: 40vh;
+    }
+
+    footer {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .whats,
+    .email {
+        padding-left: 24px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .whats,
+    .email {
+        padding-left: 48px;
+    }
+}
